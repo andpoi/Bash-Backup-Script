@@ -7,7 +7,7 @@ SEP="========================================================================"
 if [ -f $BACKUPLOC ]
 	then
 		echo $SEP
-		echo "The file" $BACKUPLOC "already exists...."
+		echo "The file" "'"$BACKUPLOC"'" "already exists...."
 		echo "Exiting this program so you don't have to"
 		echo $SEP
 		exit
