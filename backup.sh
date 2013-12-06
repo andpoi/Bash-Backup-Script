@@ -22,9 +22,9 @@ echo "Currently tarballing your files and moving them to" $TEMPDIR
 tar -czf $TEMPDIR $USERD
 
 echo "Backup created at" $TEMPDIR
-cp $TEMPDIR $BACKUPLOC
+cp $TEMPDIR $BACKUPLOC #This copies the file from the tempdir to the dropbox folder
 echo "Copied to" $BACKUPLOC
-rm $TEMPDIR
+rm $TEMPDIR #This removes the temporary file that is in the repository
 echo "Removed temporary files"
 echo "Created from files located at" $USERD
 echo $SEP
